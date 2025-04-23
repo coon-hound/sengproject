@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f7;
+            margin: 0;
+            padding: 20px;
+        }
+        .one-pager {
+            width: 800px;
+            height: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            border: 1px solid #333;
+            position: relative;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+        }
+        .center-circle {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #f0e6d2;
+            border: 2px solid #6b4226;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 2;
+        }
+        .quadrant {
+            width: 398px;
+            height: 498px;
+            position: absolute;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+        .top-left {
+            top: 0;
+            left: 0;
+            background-color: #e6f2ff;
+            border-right: 1px solid #333;
+            border-bottom: 1px solid #333;
+        }
+        .top-right {
+            top: 0;
+            right: 0;
+            background-color: #fff0e6;
+            border-left: 1px solid #333;
+            border-bottom: 1px solid #333;
+        }
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+            background-color: #e6fff0;
+            border-right: 1px solid #333;
+            border-top: 1px solid #333;
+        }
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+            background-color: #f9e6ff;
+            border-left: 1px solid #333;
+            border-top: 1px solid #333;
+        }
+        h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333;
+            text-decoration: underline;
+        }
+        h1 {
+            font-size: 20px;
+            margin: 0;
+            font-weight: bold;
+            color: #6b4226;
+        }
+        p {
+            font-size: 14px;
+            margin: 8px 0;
+        }
+        .quote {
+            font-style: italic;
+            border-left: 3px solid #333;
+            padding-left: 10px;
+            margin: 15px 0;
+        }
+        .bullet-list {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        .circle-content {
+            padding: 15px;
+        }
+        .subtitle {
+            font-size: 12px;
+            font-style: italic;
+            margin-top: 5px;
+        }
+        .book-covers {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .book-cover {
+            width: 80px;
+            height: 120px;
+            margin: 5px;
+            overflow: hidden;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+        .book-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .date {
+            font-size: 12px;
+            color: #666;
+            font-weight: normal;
+        }
+        .img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .img-container img {
+            max-width: 100%;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="one-pager">
+        <div class="quadrant top-left">
+            <h2>Background & Formative Experiences</h2>
+            <div class="img-container" style="height: 80px;">
+                <img src="https://img.freepik.com/premium-photo/flags-uk-japan-divided-diagonally_698953-10312.jpg" alt="England and Japan flags" style="max-height: 80px;">
+            </div>
+            <p>Born in Nagasaki, Japan (1954)</p>
+            <p>Moved to England at age 5</p>
+            <div class="quote">"I've had this curious relationship with Japan. I've had this very strong Japanese background at home, but outside I was totally immersed in English culture."</div>
+            <p>Studied English and Philosophy at University of Kent</p>
+            <p>Initially aspired to be a songwriter and musician</p>
+            <p>Worked as a grouse beater for the Queen Mother at Balmoral Castle</p>
+            <div class="img-container" style="height: 100px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQFlWOmGQsp8B_4r1BDKMI7L26SNiTMSGSUQ&s" alt="Young Ishiguro with guitar" style="max-height: 100px;">
+            </div>
+        </div>
+        
+        <div class="quadrant top-right">
+            <h2>Writing Style & Technique</h2>
+            <div class="quote">"I've never been a great writer of prose. I can't do it. It's not out of choice." (Guardian, 2025)</div>
+            <p>Master of first-person narration</p>
+            <ul class="bullet-list">
+                <li>Creates unreliable narrators who engage in self-deception</li>
+                <li>Establishes distinctive atmospheric qualities</li>
+                <li>Characters struggle with memory and emotional repression</li>
+            </ul>
+            <div class="quote">"I have to play to my strengths and not to my weaknesses."</div>
+            <p>Genre-crossing novelist: historical, science fiction, fantasy</p>
+            <div class="img-container" style="height: 100px;">
+                <img src="https://c8.alamy.com/comp/2DR6DGF/vintage-atmosphere-typing-a-letter-or-a-manuscript-on-an-old-typewriter-during-christmas-time-pine-cones-and-decorations-all-around-2DR6DGF.jpg" alt="Typewriter with manuscript" style="max-height: 100px;">
+            </div>
+            <p>Known for subtle, restrained emotion and unresolved tensions</p>
+        </div>
+        
+        <div class="quadrant bottom-left">
+            <h2>Key Works & Themes</h2>
+            <div class="book-covers">
+                <div class="book-cover">
+                    <img src="https://cdn.kobo.com/book-images/c086f77b-ab1d-4569-80f2-99a3c96fe3cc/1200/1200/False/the-remains-of-the-day.jpg" alt="The Remains of the Day book cover">
+                </div>
+                <div class="book-cover">
+                    <img src="https://m.media-amazon.com/images/I/71DgZ3LElXL.jpg" alt="Never Let Me Go book cover">
+                </div>
+                <div class="book-cover">
+                    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1603206535i/54120408.jpg" alt="Klara and the Sun book cover">
+                </div>
+            </div>
+            <p><strong>Major Themes:</strong></p>
+            <ul class="bullet-list">
+                <li>Memory and its unreliability</li>
+                <li>Self-deception and emotional repression</li>
+                <li>Mortality and what makes us human</li>
+                <li>Duty versus personal desire</li>
+                <li>Isolation and missed opportunities</li>
+            </ul>
+            <div class="quote">"Somewhere, irrationally, we can't quite accept our fate, and we long for this special dispensation."</div>
+            <div class="img-container" style="height: 80px;">
+                <img src="https://img.freepik.com/free-photo/3d-rendering-biorobots-concept_23-2149524387.jpg" alt="Conceptual image of clones or robots" style="max-height: 80px;">
+            </div>
+        </div>
+        
+        <div class="quadrant bottom-right">
+            <h2>Influences & Legacy</h2>
+            <div class="quote">"My heroes were Bob Dylan, swapping folk protest music for rock'n'roll for country and western, or Miles Davis or even Picasso."</div>
+            <p><strong>Major Influences:</strong></p>
+            <ul class="bullet-list">
+                <li>Japanese films (Yasujirō Ozu, Mikio Naruse)</li>
+                <li>Western literature (Dostoevsky, Kafka, Proust)</li>
+                <li>Music (Bob Dylan, Tom Waits)</li>
+                <li>Film (Stanley Kubrick)</li>
+            </ul>
+            <p><strong>Concerns about AI:</strong></p>
+            <div class="quote">"AI will become very good at manipulating emotions. I think we're on the verge of that."</div>
+            <p>Nobel Prize in Literature (2017)</p>
+            <p>Knight Bachelor (2019)</p>
+            <div class="img-container" style="height: 80px;">
+                <img src="https://sc0.blr1.digitaloceanspaces.com/inline/860715-cfvtirslpm-1512711472.jpg" alt="Nobel medal and film reel" style="max-height: 80px;">
+            </div>
+        </div>
+        
+        <div class="center-circle">
+            <div class="circle-content">
+                <h1>KAZUO ISHIGURO</h1>
+                <p class="subtitle">Master of Memory and Self-Deception</p>
+                <div style="height: 80px; width: 80px; border-radius: 50%; overflow: hidden; margin: 5px auto;">
+                    <img src="https://www.nobelprize.org/images/ishiguro-15228-large.jpg" alt="Portrait of Kazuo Ishiguro" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <p class="date">1954 - present</p>
+                <p>Nobel Prize 2017</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
